@@ -101,6 +101,12 @@ spring.jpa.properties.hibernate.format_sql=true
 - `spring.jpa.show-sql`: Display SQL queries in console
 - `spring.jpa.properties.hibernate.format_sql`: Format SQL queries for readability
 
+> **⚠️ Security Warning:** Never commit real passwords to version control! Consider using:
+> - Environment variables: `${DB_PASSWORD}`
+> - Spring profiles for different environments
+> - External configuration files excluded from Git
+> - Secret management tools for production
+
 ## 🚀 Installation & Setup
 
 ### Option 1: Using Maven Wrapper (Recommended)
